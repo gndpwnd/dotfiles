@@ -1,0 +1,294 @@
+[global_config]
+  window_state = maximise
+  inactive_color_offset = 0.8055555555555556
+  suppress_multiple_term_dialog = True
+[keybindings]
+  new_tab = <Primary>t
+  cycle_next = <Super>b
+  cycle_prev = <Super>x
+  go_next = <Shift><Alt>n
+  go_prev = <Primary><Shift>p
+  split_horiz = <Alt>o
+  split_vert = <Alt>i
+  close_term = <Primary>e
+  next_tab = <Primary>Tab
+  prev_tab = <Primary><Shift>Tab
+  reset = <Primary><Shift>r
+  broadcast_off = <Primary><Alt>o
+  broadcast_group = <Primary><Shift>g
+  broadcast_all = <Primary><Shift>a
+  edit_tab_title = <Primary><Shift>n
+  next_profile = <Alt>p
+[profiles]
+  [[default]]
+    background_darkness = 0.95
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = Monospace 15
+    foreground_color = "#9a9996"
+    show_titlebar = False
+    scrollbar_position = hidden
+    scrollback_infinite = True
+    word_chars = "-,?%&#:_/."
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+  [[pwnbox]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 0:35
+      maximised = True
+      fullscreen = False
+      size = 1908, 908
+      title = kali@kali: /HTB-boxes/Cronos
+      last_active_window = True
+    [[[child1]]]
+      type = Notebook
+      parent = child0
+      order = 0
+      labels = vpn, pwnbox, general enum, web enum, xp
+      last_active_term = 804983d7-397f-4a46-aae1-71f50b09def5, f805ce4f-2acc-48b5-bae3-c2f12d7b1dba, 0d76172c-4a3f-4279-9b05-edeceecfe417, 55340de3-d5a0-4848-b618-347461dcdac3, 48bed675-6b75-4585-b0af-2c60889b48ee
+      active_page = 0
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = default
+      uuid = 804983d7-397f-4a46-aae1-71f50b09def5
+    [[[child3]]]
+      type = VPaned
+      parent = child1
+      order = 1
+      position = 431
+      ratio = 0.5
+    [[[child4]]]
+      type = HPaned
+      parent = child3
+      order = 0
+      position = 950
+      ratio = 0.5
+    [[[terminal5]]]
+      type = Terminal
+      parent = child4
+      order = 0
+      profile = default
+      uuid = a2482472-14d3-4c04-b579-22aca429dea8
+    [[[terminal6]]]
+      type = Terminal
+      parent = child4
+      order = 1
+      profile = default
+      uuid = 0e9dc7fd-a85e-46f8-95b2-8793ff90b5da
+    [[[child7]]]
+      type = HPaned
+      parent = child3
+      order = 1
+      position = 950
+      ratio = 0.5
+    [[[terminal8]]]
+      type = Terminal
+      parent = child7
+      order = 0
+      profile = default
+      uuid = 227c40c6-dad4-4342-930d-3e57bd847f41
+    [[[terminal9]]]
+      type = Terminal
+      parent = child7
+      order = 1
+      profile = default
+      uuid = f805ce4f-2acc-48b5-bae3-c2f12d7b1dba
+    [[[child10]]]
+      type = VPaned
+      parent = child1
+      order = 2
+      position = 431
+      ratio = 0.5
+    [[[child11]]]
+      type = VPaned
+      parent = child10
+      order = 0
+      position = 214
+      ratio = 0.5023474178403756
+    [[[child12]]]
+      type = HPaned
+      parent = child11
+      order = 0
+      position = 950
+      ratio = 0.5
+    [[[terminal13]]]
+      type = Terminal
+      parent = child12
+      order = 0
+      profile = default
+      uuid = bb00f4c8-b8ff-43c3-b08c-e9a758728916
+    [[[terminal14]]]
+      type = Terminal
+      parent = child12
+      order = 1
+      profile = default
+      uuid = 5e7ef27d-1149-4775-b08d-7e78ab2f061f
+    [[[child15]]]
+      type = HPaned
+      parent = child11
+      order = 1
+      position = 950
+      ratio = 0.5
+    [[[terminal16]]]
+      type = Terminal
+      parent = child15
+      order = 0
+      profile = default
+      uuid = cc337e6a-88b0-49a9-b192-c7b7ef01e786
+    [[[terminal17]]]
+      type = Terminal
+      parent = child15
+      order = 1
+      profile = default
+      uuid = cf399162-7410-436f-b89d-53754270cd82
+    [[[child18]]]
+      type = VPaned
+      parent = child10
+      order = 1
+      position = 214
+      ratio = 0.5023474178403756
+    [[[child19]]]
+      type = HPaned
+      parent = child18
+      order = 0
+      position = 950
+      ratio = 0.5
+    [[[terminal20]]]
+      type = Terminal
+      parent = child19
+      order = 0
+      profile = default
+      uuid = e6f81fbf-e994-46d4-be3c-93faa90da49e
+    [[[terminal21]]]
+      type = Terminal
+      parent = child19
+      order = 1
+      profile = default
+      uuid = c593d2c7-4b5b-4224-9f1a-3dbd40568865
+    [[[child22]]]
+      type = HPaned
+      parent = child18
+      order = 1
+      position = 950
+      ratio = 0.5
+    [[[terminal23]]]
+      type = Terminal
+      parent = child22
+      order = 0
+      profile = default
+      uuid = 98aeb204-2416-4382-bc94-532bb52018a8
+    [[[terminal24]]]
+      type = Terminal
+      parent = child22
+      order = 1
+      profile = default
+      uuid = 0d76172c-4a3f-4279-9b05-edeceecfe417
+    [[[child25]]]
+      type = VPaned
+      parent = child1
+      order = 3
+      position = 431
+      ratio = 0.5
+    [[[child26]]]
+      type = VPaned
+      parent = child25
+      order = 0
+      position = 214
+      ratio = 0.5023474178403756
+    [[[child27]]]
+      type = HPaned
+      parent = child26
+      order = 0
+      position = 950
+      ratio = 0.5
+    [[[terminal28]]]
+      type = Terminal
+      parent = child27
+      order = 0
+      profile = default
+      uuid = f20bfc4d-161b-4f72-aebf-73b9f5cfdc27
+    [[[terminal29]]]
+      type = Terminal
+      parent = child27
+      order = 1
+      profile = default
+      uuid = 0f3d2ce3-96b6-4d53-9f53-a8e9ca1cdb51
+    [[[child30]]]
+      type = HPaned
+      parent = child26
+      order = 1
+      position = 950
+      ratio = 0.5
+    [[[terminal31]]]
+      type = Terminal
+      parent = child30
+      order = 0
+      profile = default
+      uuid = 8277722c-f27d-40e3-99a2-a8251fce9c39
+    [[[terminal32]]]
+      type = Terminal
+      parent = child30
+      order = 1
+      profile = default
+      uuid = 83f3cdcc-5c05-4b86-a427-0dfab50ba828
+    [[[child33]]]
+      type = VPaned
+      parent = child25
+      order = 1
+      position = 214
+      ratio = 0.5023474178403756
+    [[[child34]]]
+      type = HPaned
+      parent = child33
+      order = 0
+      position = 950
+      ratio = 0.5
+    [[[terminal35]]]
+      type = Terminal
+      parent = child34
+      order = 0
+      profile = default
+      uuid = e9902fcc-183a-4848-b454-3d1e453106f6
+    [[[terminal36]]]
+      type = Terminal
+      parent = child34
+      order = 1
+      profile = default
+      uuid = 1af1f66f-7d3b-4301-b2cb-43694ae8b681
+    [[[child37]]]
+      type = HPaned
+      parent = child33
+      order = 1
+      position = 950
+      ratio = 0.5
+    [[[terminal38]]]
+      type = Terminal
+      parent = child37
+      order = 0
+      profile = default
+      uuid = faf1876f-f0bb-4856-b9eb-32249a3edbcf
+    [[[terminal39]]]
+      type = Terminal
+      parent = child37
+      order = 1
+      profile = default
+      uuid = 55340de3-d5a0-4848-b618-347461dcdac3
+    [[[terminal40]]]
+      type = Terminal
+      parent = child1
+      order = 4
+      profile = default
+      uuid = 48bed675-6b75-4585-b0af-2c60889b48ee
+[plugins]
