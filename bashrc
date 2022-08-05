@@ -175,6 +175,7 @@ alias klogs="$preamble logs --timestamps "
 alias klogsf="$preamble logs --timestamps --follow "
 
 alias mcr='macchanger -r'
+alias delexif='for f in ./*; do exiftool -all= -overwrite_original $f; done'
 alias autorecon='python3 /opt/AutoRecon/autorecon.py'
 alias photon='python3 /opt/Photon/photon.py'
 alias dirsearch='python3 /opt/dirsearch/dirsearch.py'
