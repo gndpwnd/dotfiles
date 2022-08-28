@@ -189,6 +189,8 @@ alias mssqlclient='python3 /opt/impacket/examples/mssqlclient.py'
 
 alias ghidra='bash /opt/ghidra/ghidraRun'
 
+alias backlight='sudo /etc/acpi/asus-keyboard-backlight.sh'
+alias backlight-off='sudo /etc/acpi/asus-keyboard-backlight.sh'
 ##############################
 #           Prompt
 ##############################
