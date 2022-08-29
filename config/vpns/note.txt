@@ -1,0 +1,3 @@
+htb-lab > htb-lab.ovpn
+htb-acad > htb-acad.ovpn
+thm-lab > thm-lab.ovpn

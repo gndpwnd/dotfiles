@@ -50,28 +50,6 @@ if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /etc/bash_completion
 fi
 
-##############################
-#           ALIASES
-##############################
-
-alias ls='ls --color=auto'
-alias l='ls -la'
-alias lr='ls -la -R'
-alias rf='rm -rf'
-alias py='python3'
-alias d='rm -rf'
-
-alias up='python3 -m http.server 8000'
-alias psa='ps aux | grep'
-alias sc='SSH_AUTH_SOCK='
-alias root='sudo su'
-alias fix-ssh="eval \`ssh-agent -s\` && ssh-add ~/.ssh/gitpriv"
-
-alias thmvpn='sudo openvpn ~/Desktop/thm.ovpn'
-alias htbvpn='sudo openvpn ~/Desktop/htb.ovpn'
-
-alias r='FILE=$1; rustc $FILE && bash $FILE | rev | cut -c4- | rev'
-
 get_git() {
   if git rev-parse --git-dir > /dev/null 2>&1; then
     repo=$(basename `git rev-parse --show-toplevel`)
@@ -92,6 +70,29 @@ get_git() {
     echo "${GREEN}[${repo}:${branch}:${commit}] ${YELLOW}[${mod}${stash}]"
   fi
 }
+
+##############################
+#           ALIASES
+##############################
+
+alias ls='ls --color=auto'
+alias l='ls -la'
+alias lr='ls -la -R'
+alias rf='rm -rf'
+alias py='python3'
+alias d='rm -rf'
+
+alias up='python3 -m http.server 8000'
+alias psa='ps aux | grep'
+alias root='sudo su'
+alias fix-ssh="eval \`ssh-agent -s\` && ssh-add ~/.ssh/gitpriv"
+
+alias thm-lab='sudo openvpn ~/.config/vpns/thm-lab.ovpn'
+alias htb-lab='sudo openvpn ~/.config/vpns/htb-lab.ovpn'
+alias htb-acad='sudo openvpn ~/.config/vpns/htb-acad.ovpn'
+
+alias r='FILE=$1; rustc $FILE && bash $FILE | rev | cut -c4- | rev'
+
 alias gic='git clone'
 alias gid='git diff'
 alias gidn='git diff --name-only'
