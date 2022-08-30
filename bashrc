@@ -87,10 +87,6 @@ alias psa='ps aux | grep'
 alias root='sudo su'
 alias fix-ssh="eval \`ssh-agent -s\` && ssh-add ~/.ssh/gitpriv"
 
-alias thm-lab='sudo openvpn ~/.config/vpns/thm-lab.ovpn'
-alias htb-lab='sudo openvpn ~/.config/vpns/htb-lab.ovpn'
-alias htb-acad='sudo openvpn ~/.config/vpns/htb-acad.ovpn'
-
 alias r='FILE=$1; rustc $FILE && bash $FILE | rev | cut -c4- | rev'
 
 alias gic='git clone'
@@ -192,6 +188,12 @@ alias ghidra='bash /opt/ghidra/ghidraRun'
 
 alias backlight-up='sudo /etc/acpi/asus-keyboard-backlight.sh'
 alias backlight-down='sudo /etc/acpi/asus-keyboard-backlight.sh down'
+
+alias thm-lab='sudo openvpn ~/.config/vpns/thm-lab.ovpn'
+alias htb-lab='sudo openvpn ~/.config/vpns/htb-lab.ovpn'
+alias htb-acad='sudo openvpn ~/.config/vpns/htb-acad.ovpn'
+alias pg-lab='sudo openvpn ~/.config/vpns/pg-lab.ovpn'
+
 ##############################
 #           Prompt
 ##############################
