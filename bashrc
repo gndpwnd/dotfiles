@@ -130,7 +130,9 @@ dokill () {
 	docker rm $1
 }
 
-
+alias hg = 'hugo'
+alias hgn = 'hugo new site . --force'
+alias hgb = 'hugo && hugo server --disableFastRender'
 alias ju='jupyter'
 alias jun='jupyter notebook &'
 alias jul='jupyter lab &'
