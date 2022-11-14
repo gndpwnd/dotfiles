@@ -33,12 +33,15 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 #         ENV
 ##############################
 
-export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="/usr/local/go/bin:$PATH"
 export PATH=$PATH:~/.platformio/penv/bin
+export GEM_HOME=$HOME/gems
+export PATH=$HOME/gems/bin:$PATH
 export DOTNET_ROOT=/opt/dotnet
 export gitpriv="${USER}/.ssh/gitpriv"
+
 
 ##############################
 #         Functions
