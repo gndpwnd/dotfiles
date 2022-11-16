@@ -192,6 +192,9 @@ alias mssqlclient='python3 /opt/impacket/examples/mssqlclient.py'
 
 alias ghidra='bash /opt/ghidra/ghidraRun'
 
+# Folding at home client
+alias fah='/etc/init.d/FAHClient'
+
 ##############################
 #           Prompt
 ##############################
