@@ -147,6 +147,12 @@ alias cultparrot='curl parrot.live'
 alias hs="hugo && hugo server --disableFastRender"
 alias h="hugo"
 
+
+alias gob="go build"
+alias gog="go get"
+alis gomt="go mod tidy"
+alias gomi="go mod init"
+
 alias n="npm"
 alias ni="npm install"
 alias nl="npm link"
