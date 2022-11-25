@@ -150,7 +150,7 @@ alias h="hugo"
 
 alias gob="go build"
 alias gog="go get"
-alis gomt="go mod tidy"
+alias gomt="go mod tidy"
 alias gomi="go mod init"
 
 alias n="npm"
