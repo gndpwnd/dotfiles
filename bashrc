@@ -155,6 +155,7 @@ alias gomi="go mod init"
 
 alias n="npm"
 alias ni="npm install"
+alias nis="npm install --save"
 alias nl="npm link"
 alias nr="npm run"
 alias nrb="npm run build"
