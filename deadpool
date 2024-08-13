@@ -70,8 +70,10 @@ echo "in a separate terminal, run the following\ncurl https://sh.rustup.rs -sSf 
 wget https://gist.githubusercontent.com/jeanmolossi/8f2a643540aee671becf828d983952fd/raw/5b9b77c6f96bbcfcbd4cd1ddf8e8df3dced799da/install-go.sh
 echo "in a separate trrminal run the install-go script"
 
-#Arduino
+#Arduino / Pio
 sudo snap install arduino
+wget -O get-platformio.py https://raw.githubusercontent.com/platformio/platformio-core-installer/master/get-platformio.py
+echo "in a separate terminal run the following \npython3 get-platformio.py"
 
 pacman -S curl sudo sublime-text
 snap install spotify
